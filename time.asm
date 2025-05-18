@@ -6,7 +6,7 @@
 start:
  mov ax, @data                                 ; Load the address of the data segment into AX
  mov ds, ax                                     ; Initialize DS with the address in AX so we can access variables
-; Display the message: "current time is"
+                                               ; Display the message: "current time is"
  lea dx, msg                                    ; Load address of the message into DX
  mov ah, 9                                      ; DOS function 09h: display string at DS:DX ending with '$'
  int 21h                                        ; Call DOS interrupt
