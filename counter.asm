@@ -34,8 +34,7 @@ setcursor proc
     mov dl, 40             ; Column 40 
     int 10h                ; BIOS video interrupt 
     ret 
-setcursor endp  ; disp: Displays the 2-digit number in AL 
-
+setcursor endp  ;       disp: Displays the 2-digit number in AL 
 ; Converts the number in AL to ASCII and prints it
 ; The number is displayed in hexadecimal format (0x00 to 0xFF)
 disp proc 
